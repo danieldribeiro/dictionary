@@ -39,8 +39,10 @@ export default createGlobalStyle`
   }
 
   #root{
+    max-width: 800px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     padding: 24px;
   }
 

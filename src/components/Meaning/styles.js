@@ -20,5 +20,34 @@ export const Container = styled.div`
       height: 1px;
       background-color: ${({theme}) => theme.COLORS.GRAY_400};
     }
-  }
+
+  } 
+
+  ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 24px 0;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+
+    li::before {
+      background-color: ${({theme}) => theme.COLORS.PURPLE};
+    }
+  } 
+
 `

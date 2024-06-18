@@ -22,30 +22,31 @@ function App() {
       .then(response => response.json())
       .then(data => {
         if (data[0]) {
-          setMeanings(data[0].meanings);
+          const fetchedMeanings = data[0].meanings;
+          const partsOfSpeech = fetchedMeanings.map(meaning => meaning.partOfSpeech);
+
+          setMeanings(fetchedMeanings);
           setWord(data[0].word);
           setPhonetic(data[0].phonetic);
-          
-          const partsOfSpeech = data[0].meanings.map(meaning => meaning.partOfSpeech);
           setPartOfSpeech(partsOfSpeech);
 
-          meanings.forEach(mean => {
+          // Separate noun and verb definitions
+          const nounDefinitions = [];
+          const verbDefinitions = [];
+
+          fetchedMeanings.forEach(mean => {
             if (mean.partOfSpeech === 'noun') {
-              for(let i = 0; i < mean.definitions.length; i++){
-                noun.push(mean.definitions[i])
-              }
-            } else if (mean.partOfSpeech ==='verb') {
-              for(let i = 0; i < mean.definitions.length; i++){
-                verb.push(mean.definitions[i])
-              }
+              nounDefinitions.push(...mean.definitions);
+            } else if (mean.partOfSpeech === 'verb') {
+              verbDefinitions.push(...mean.definitions);
             }
-          })
+          });
+
+          setNoun(nounDefinitions);
+          setVerb(verbDefinitions);
         }
       })
-    }
-
-    console.log(noun)
-    console.log(verb)
+  }
 
   useEffect(() => {
     const body = document.body;
@@ -53,7 +54,7 @@ function App() {
   }, [theme]);
 
   return (
-  <>
+    <>
       <Header 
         theme={theme}
         setTheme={setTheme}
@@ -78,8 +79,7 @@ function App() {
           />
         </>
       }
-      
-  </>
+    </>
   )
 }
 

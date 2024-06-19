@@ -54,7 +54,7 @@ Clone o projeto
 
 ```bash
 git clone https://github.com/danieldribeiro/interactive-credit-card-details
-
+```
 
 Entre no diretório do projeto
 
@@ -74,8 +74,7 @@ Inicie o servidor
   npm run dev
 ```
 
-
 ## Referência
 
  - API utilizada: [https://api.dictionaryapi.dev/api/v2/entries/en/{word}](https://api.dictionaryapi.dev/api/v2/entries/en/{word})
-
+ - 

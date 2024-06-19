@@ -3,6 +3,10 @@
 
 O projeto consiste em um dicionário inglês online onde o usuário realiza a busca por qualquer palavra da língua inglesa e recebe diversas informações a respeito tais como: fonética, significados separados pela classe gramatical (substantivo, verbo, adjetivo ou advérbio), exemplos e sinônimos, além de ser capaz de ouvir a palavra pesquisada.
 
+<p align="center">
+  <img src="[https://example.com/imagem.jpg](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWR4c3Z1aTQxbTJra2Nycnlvb2VqNXVlNHJ0M3VtdjBkNTVmdTFtZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XCyhWpXQu7UKXqTzpk/giphy.gif)" alt="Exemplo de imagem" />
+</p>
+
 ![App demonstation](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWR4c3Z1aTQxbTJra2Nycnlvb2VqNXVlNHJ0M3VtdjBkNTVmdTFtZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XCyhWpXQu7UKXqTzpk/giphy.gif)
 
 ![App Screenshot](https://uploaddeimagens.com.br/images/004/801/357/full/Blue_And_White_Modern_Responsive_Website_Development_Services_Instagram_Post_%281%29.png?1718817987)

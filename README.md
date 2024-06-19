@@ -77,4 +77,3 @@ Inicie o servidor
 ## Referência
 
  - API utilizada: [https://api.dictionaryapi.dev/api/v2/entries/en/{word}](https://api.dictionaryapi.dev/api/v2/entries/en/{word})
- - 

@@ -32,7 +32,8 @@ export const Container = styled.div`
   }
   
   svg{
-    color: ${({ theme }) => theme.COLORS.PURPLE}
+    color: ${({ theme }) => theme.COLORS.PURPLE};
+    cursor: pointer;
   }
 
   ${({ thememode, theme }) =>
@@ -42,8 +43,8 @@ export const Container = styled.div`
     color: ${theme.COLORS.WHITE};
   `}
 
-  ${({ error, theme }) =>
-      error === 'true' &&
+  ${({ error, fetchError, theme }) =>
+      error === 'true' || fetchError == 'true' &&
       `
       border: 1px solid ${theme.COLORS.RED}
   `}

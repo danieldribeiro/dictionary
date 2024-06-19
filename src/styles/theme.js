@@ -9,6 +9,7 @@ export default {
     GRAY_700: '#1F1F1F',
     WHITE: '#FFFFFF',
     PURPLE: '#A445ED',
+    LIGHT_PURPLE: '#A436FF',
     RED: '#FF5252',
   }
 }

@@ -9,15 +9,18 @@ export const Container = styled.header`
 
   img{
     width: 24px;
+    height: 24px;
   }
 
   select{
     border: none;
     text-align: center;
     padding: 0 10px;
+    cursor: pointer;
   }
 
   svg {
     font-size: 20px;
+    cursor: pointer;
   }
 `

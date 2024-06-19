@@ -32,6 +32,7 @@ export const Container = styled.div`
       position: relative;
       padding-left: 20px;
       margin-bottom: 10px;
+
     }
 
     li::before {
@@ -48,6 +49,34 @@ export const Container = styled.div`
     li::before {
       background-color: ${({theme}) => theme.COLORS.PURPLE};
     }
-  } 
+  }
+
+  .synonyms{
+    margin-top: 25px;
+    font-size: 16px;
+    color: ${({theme}) => theme.COLORS.GRAY_700};
+
+    span{
+      color: ${({theme}) => theme.COLORS.PURPLE};
+    }
+  }
+
+  .verbs {
+    p{
+      font-size: 14px;
+      color: ${({theme}) => theme.COLORS.GRAY_400};
+      margin-bottom: 10px;
+    }
+
+    .synonyms{
+      margin-top: 25px;
+      font-size: 16px;
+      color: ${({theme}) => theme.COLORS.GRAY_700};
+
+      span{
+        color: ${({theme}) => theme.COLORS.PURPLE};
+      }
+    }
+  }
 
 `

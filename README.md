@@ -38,6 +38,7 @@ O projeto consiste em um dicionário inglês online onde o usuário realiza a bu
 
 7. **Interface de Usuário:**
    - Tema claro e escuro, alternável pelo usuário.
+   - Possibilidade de alteração da fonte, de acordo com o desejo do usuário.
    - Layout responsivo e intuitivo para fácil navegação.
 
 8. **Acessibilidade:**
